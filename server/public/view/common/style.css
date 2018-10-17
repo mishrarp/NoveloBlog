@@ -1,0 +1,373 @@
+/*Include Font Files*/
+/*@font-face {
+    font-family: Gotham_Black;
+    src: url(view/common/fonts/GOTHAM-BOLD.OTF) format("opentype");
+}
+@font-face {
+    font-family: Gotham_Book;
+    src: url(../fonts/GOTHAM-BOOK.OTF) format("opentype");
+}
+@font-face {
+    font-family: Gotham_Extralight_Italic;
+    src: url(/fonts/GOTHAM-EXTRALIGHT_ITALIC.OTF) format("opentype");
+}*/
+@font-face {
+    font-family: Gotham_Light;
+    src: url(fonts/GOTHAM-LIGHT.OTF) format("opentype");
+}
+/*@font-face {
+    font-family: Gotham_Medium;
+    src: url(/fonts/GOTHAM-MEDIUM.OTF) format("opentype");
+}
+*/
+
+*{
+	box-sizing: border-box;
+}
+
+htm,body,img,div,h1, h2, h3, h4, h5, h6,ol,ul,li,span,p{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Gotham_Light';
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+/*font-family: 'PT Sans Narrow', serif;*/
+font-weight: normal;
+}
+
+.clr {
+clear: both;
+float: none;
+}
+
+/*Container Css*/
+.mycontainer {
+margin: 0 auto;
+width: 1150px;
+background: #fff;
+}
+
+/*header CSS*/
+
+.header-wrapper {
+float: left;
+width: 1150px;
+position: fixed;
+margin: 0 0 40px;
+box-shadow: 0 2px 2px -2px rgba(0,0,0,0.1);
+z-index: 1041;
+height: 82px;
+background-color: rgba(34,34,34,1.00);
+background-repeat: repeat;
+}
+
+.ct-wrapper {
+padding: 0px;
+position: relative;
+max-width: 1070px;
+margin: 0 auto;
+}
+
+.header-inner-wrap {
+position: absolute;
+top: 15px;
+left: 0px;
+}
+
+#header-inner {
+margin: 0;
+padding: 0;
+}
+
+a {
+color: #f25860;
+outline: none;
+text-decoration: none;
+}
+
+#header h1 {
+color: #fff;
+font-size: 34px;
+text-transform: uppercase;
+line-height: 44px;
+}
+
+#header img {
+border: 0 none;
+background: none;
+max-width: 250px;
+height: auto;
+margin: 0 auto;
+margin-top: -5px;
+}
+
+a img {
+vertical-align: middle;
+border: none;
+}
+
+a#nav-open-btn {
+position: absolute;
+right: 20px;
+top: 17px;
+font-size: 28px;
+color: #e23a3e;
+z-index: 10000;
+}
+
+/* Nevigation Menu */
+
+#nav {
+float: right;
+/*font-family: Roboto condensed;*/
+/*font-weight: 400;*/
+height:82px;
+}
+
+#nav ul {
+padding: 0;
+margin: 0;
+position: relative;
+}
+
+ol, ul {
+padding: 10px 0 20px;
+margin: 0 0 0 35px;
+text-align: left;
+}
+
+#nav li {
+list-style: none;
+float: left;
+padding: 0;
+margin: 0 10px;
+position: relative;
+}
+
+ul li {
+list-style-type: square;
+padding: 0 0 5px;
+/*height:82px;*/
+}
+
+#nav li:first-child a, #nav li:first-child:after {
+color: #e23a3e;
+}
+
+#nav li a {
+padding: 30px 3px 30px;
+text-transform: uppercase;
+}
+
+#nav li a {
+height:82px;
+color: white;
+display: block;
+float: left;
+text-decoration: none;
+/*padding: 40px 3px 38px 3px;*/
+line-height: 29px;
+font-size: 14px;
+box-shadow: none;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-ms-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+font-style: normal;
+}
+
+#nav li a : hover{
+ color: #e23a3e;
+}
+
+/*footer css*/
+
+#footer {
+    background: #333;
+    width: 100%;
+    color: #E2E2E2;
+    padding-top: 20px;
+/*    height: 270px;*/
+}
+
+.footer {
+    float: left;
+    width: 33.33%;
+}
+
+.footer .widget {
+    clear: both;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 15px 0 25px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer h2 {
+    color: #ddd;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.footer-credits {
+    border-top: 1px solid #2E2E2E;
+    padding: 15px;
+    background: #242424;
+    color: #CCC;
+    /*font-family: raleway;*/
+    font-size: 15px;
+/*
+    height: 68px;
+    line-height: 68px;
+*/
+}
+
+/* body_bg_img css*/
+
+.body_bg_img {
+position: fixed;
+z-index: -1;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+
+.body_bg_img img {
+min-width: 100%;
+min-height: 100%;
+vertical-align: middle;
+-ms-interpolation-mode: bicubic;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+}
+
+.overlay_bg_div {
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 1;
+background-color: rgba(255,255,255,0.60);
+background-image: url('images/bgImgae.jpg');
+}
+
+@media screen and (max-width: 1090px){
+.mycontainer, .ct-wrapper, #featured_wrapper {
+max-width: 96%;
+}
+#featured_wrapper .ct-wrapper {
+width: 100%;
+max-width: 100%;
+}
+#header, .header-right {
+float: none;
+text-align: center;
+width: 100%;
+}
+}
+
+/*media query*/
+@media screen and (max-width: 980px){
+.header-wrapper .ct-wrapper {
+padding: 0 !important;
+}
+.main-wrapper, .opt-in .opt-in-wrap {
+    margin-right: 0 !important;
+    width: 100% !important;
+}  
+.sidebar-wrapper {
+    float: left !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+}  
+/*
+#footer{
+    height: 735px;
+}
+*/
+}
+
+@media only screen and (max-width: 960px){
+ #nav {
+    float: right !important;
+    width: 255px !important;
+    background: #222222 !important;
+    margin-top: 36px !important;
+    display: none !important;
+}   
+#nav li {
+    float: left !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height:40px !important;
+}
+#nav li a, .stickyHeader #nav li a {
+    padding: 9px 10px 10px !important;
+}    
+.header-inner-wrap {
+position: relative !important;
+top: 15px !important;
+left: -8px !important;
+}
+#nav-open-btn {
+display: block !important;
+}
+#header img {
+max-width: 145px !important;
+margin-top: 0 !important;
+}
+    
+}
+
+@media screen and (max-width: 768px){
+.featured_3 .featured_element, .featured_4 .featured_element {
+width: 100% !important;
+}
+.featured_3 img, .featured_4 img {
+width: 100% !important;
+}
+h2.entry-title, .entry-title {
+    font-size: 34px !important;
+    line-height: 42px !important;
+}
+.footer {
+    width: 50%!important;
+}
+}
+
+@media screen and (max-width: 528px){
+.footer {
+    width: 100%!important;
+}
+}
+
+@media screen and (max-width: 500px){
+#header img {
+width: 100% !important;
+}
+h2.entry-title, .entry-title {
+    font-size: 30px !important;
+}    
+}    
+
+@media screen and (max-width: 320px){
+.ct-wrapper {
+padding: 0 !important;
+}
+}

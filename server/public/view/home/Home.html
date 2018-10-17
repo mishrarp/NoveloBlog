@@ -1,0 +1,193 @@
+<div class="featured_wrapper full_width" id="featured_wrapper" style="/*display:none;*/">
+	<div class="ct-wrapper">
+		<div class="featured_4">
+			<div class="featured_element" ng-repeat="artical in articalData | limitTo:4">
+				<div class="featured_item">
+					<img src="{{artical.topic_img}}">
+				</div>
+				<a href="/artical" class="f_overlay" ng-click="articalPage($event,$index)"></a>
+				<div class="featured_title_over">
+					<div class="meta-item date"><i class="icon-time"></i>{{artical.create_date | date}}</div>
+					<h2><a href="/artical" ng-click="articalPage($event,$index)">{{artical.title}}</a></h2>
+					<div class="featured_excerpt">
+						<p>{{artical.content}}</p>
+						<a href="/artical" class="f_read_more" ng-click="articalPage($event,$index)"><i class="icon-arrow-right" ng-click="articalPage($event,$index)"></i> Read More</a>
+					</div>
+				</div>
+				<div class="f_title_bg"></div>
+			</div>
+		</div>
+		<div class="clr"></div>
+	</div>
+</div>
+<div class="clr"></div>
+<!-- main Body  panel -->
+<div class="ct-wrapper">
+	<div class="outer-wrapper">		
+		<!-- main Container UI -->		
+		<div class="main-wrapper">
+			<div class="content section" id="content">
+				<div class="post-outer" ng-repeat="artical in articalData">
+					<div class="post">
+						<div class="post-body">
+							<div class="entry-header">
+								<h2 class="entry-title">
+									<a href="/artical" ng-click="articalPage($event,$index)">{{artical.title}}</a>
+								</h2>
+								<div class="entry-meta">
+									<div class="meta-item date">
+										<i class="fa fa-clock-o"></i>
+										<span class="post-timestamp">
+											<a><abbr class="published">{{artical.create_date | date}}</abbr></a>
+										</span>
+									</div>
+									<div class="meta-item author">
+										<i class="fa fa-user"></i><a>{{artical.author}}</a>
+									</div>
+									<div class="meta-item categories">
+										<i class="fa fa-pencil-square-o"></i>
+										<a>{{artical.topic}}</a>
+									</div>
+									<div class="meta-item item_comments">
+										<i class="fa fa-comments-o"></i><a>{{artical.views}}</a>
+									</div>
+								</div>
+							</div>	
+                            <div class="entry-image featured_image" style="position:relative;"><a href="#/artical">
+                                <img src="{{artical.topic_img}}">
+                                <span class="featured_item_overlay"></span></a>
+                            </div>
+                            <div class="entry-content">
+                                <p> <br> {{artical.content}}</p>
+                            </div>
+                            <div class="entry-footer">
+                                <div class="meta-item">
+                                     <a class="read_more_button" href="/artical" ng-click="articalPage($event,$index)"><i class="fa fa-arrow-circle-o-right"></i>Read More</a>
+                                </div>
+                                <div class="meta-item meta-item-share">
+                                    <div class="meta-item-wrapper">
+                                        <div class="soc_sharing">
+                                            <div class="thr_share_button">
+                                                <i class="fa fa-share"></i>
+                                            </div>
+                                            <ul class="thr_share_items">
+                                                <li>
+                                                    <a class="fa fa-facebook" href="http://www.facebook.com/sharer.php?u=http://novelo-blog-soratemplates.blogspot.in/2015/03/papilion-minter-savior_4.html&amp;title=Papilion Minter Savior" onclick="window.open(this.href, 'windowName', 'width=550, height=600, left=24, top=24, scrollbars, resizable'); return false;" rel="nofollow" target="_blank"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="fa fa-twitter" href="http://twitter.com/share?url=http://novelo-blog-soratemplates.blogspot.in/2015/03/papilion-minter-savior_4.html&amp;title=Papilion Minter Savior" onclick="window.open(this.href, 'windowName', 'width=550, height=600, left=24, top=24, scrollbars, resizable'); return false;" rel="nofollow" target="_blank"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://novelo-blog-soratemplates.blogspot.in/2015/03/papilion-minter-savior_4.html&amp;title=Papilion Minter Savior" onclick="window.open(this.href, 'windowName', 'width=550, height=600, left=24, top=24, scrollbars, resizable'); return false;" rel="nofollow" target="_blank"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="fa fa-pinterest" href="http://pinterest.com/pin/create/button/?url=http://novelo-blog-soratemplates.blogspot.in/2015/03/papilion-minter-savior_4.html&amp;media=https://4.bp.blogspot.com/--ksvqO3GU2s/V46zayFqi8I/AAAAAAAAIeM/_-awBK9SwJsdlgM2JFXZ_5X5U05YoTVWACLcB/s1600/l15-750x500.jpg&amp;description=             Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ..." onclick="window.open(this.href, 'windowName', 'width=550, height=600, left=24, top=24, scrollbars, resizable'); return false;" rel="nofollow" target="_blank"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://novelo-blog-soratemplates.blogspot.in/2015/03/papilion-minter-savior_4.html&amp;title=Papilion Minter Savior" onclick="window.open(this.href, 'windowName', 'width=550, height=600, left=24, top=24, scrollbars, resizable'); return false;" rel="nofollow" target="_blank"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+                <!-- pager -->
+                <ul ng-if="vm.pager.pages.length" class="pagination">
+                    <li ng-class="{disabled:vm.pager.currentPage === 1}">
+                        <a ng-click="vm.setPage(1)">First</a>
+                    </li>
+                    <li ng-class="{disabled:vm.pager.currentPage === 1}">
+                        <a ng-click="vm.setPage(vm.pager.currentPage - 1)">Previous</a>
+                    </li>
+                    <li ng-repeat="page in vm.pager.pages" ng-class="{active:vm.pager.currentPage === page}">
+                        <a ng-click="vm.setPage(page)">{{page}}</a>
+                    </li>                
+                    <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+                        <a ng-click="vm.setPage(vm.pager.currentPage + 1)">Next</a>
+                    </li>
+                    <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+                        <a ng-click="vm.setPage(vm.pager.totalPages)">Last</a>
+                    </li>
+                </ul>
+			</div>
+		</div>		
+        
+		<!-- sideBar UI  -->		
+		<div class="sidebar-wrapper">
+			<div class="sidebar section" id="sidebar">
+				<div class="widget HTML" data-version="1" id="HTML2">
+					<h2>Follow Us</h2>
+					<div class="widget-content">
+						<ul class="social-icon"><li class="facebook">
+						<a data-attr="Like Us" href="#">
+						<i class="fa fa-facebook"></i></a></li>
+						
+						<li class="twitter">
+						<a data-attr="Follow Us" href="#">
+						<i class="fa fa-twitter"></i></a></li>
+						
+						<li class="googleplus">
+						<a data-attr="Follow Us" href="#">
+						<i class="fa fa-google-plus"></i></a></li>
+						
+						<li class="rss">
+						<a data-attr="Subscribe Us" href="#">
+						<i class="fa fa-rss"></i></a></li>
+						
+						<li class="pinterest">
+						<a data-attr="Pin Us" href="#">
+						<i class="fa fa-pinterest"></i></a></li>
+						
+						<li class="instgram">
+						<a data-attr="Follow Us" href="#">
+						<i class="fa fa-instagram"></i></a></li>
+						
+						<li class="linkedin">
+						<a data-attr="Link With Us" href="#">
+						<i class="fa fa-linkedin"></i></a></li></ul>
+					</div>
+				</div>	
+				<div class="widget HTML">
+					<h2>Advertisement</h2>
+					<div class="widget-content">
+						<center><img src="http://4.bp.blogspot.com/-bL785fw96Dk/U_L3R6TdYFI/AAAAAAAAG_g/-7hDS-NZ22w/s1600/ad300.gif" alt="Sidebar Ads"></center>
+					</div>
+				</div>
+				<div class="widget PopularPosts">
+					<h2>Most Popular</h2>
+					<div class="widget-content popular-posts">
+						<ul>
+							<li ng-repeat="artical in articalData | limitTo:2">
+								<div class="item-thumbnail-only">
+									<div class="item-thumbnail">
+										<a href="#/artical" ng-click="articalPage($event,$index)">
+										<img alt="{{artical.author}}" border="0" src="{{artical.topic_img}}" width="320" height="320">
+										</a>
+									</div>
+									<div class="item-title"><h3><a href="#/artical" ng-click="articalPage($event,$index)">{{artical.title}}</a></h3></div>
+								</div>
+								<div style="clear: both;"></div>
+							</li>
+						</ul>
+						<div class="clear"></div>
+						<div class="clear"></div> 
+					</div>
+				</div>	
+				<div class="widget Label" data-version="1" id="Label2">
+					<h2>Labels</h2>
+					<div class="widget-content list-label-widget-content">
+						<ul>
+							<li ng-repeat="artical in articalData">
+							<a dir="ltr" href="">{{artical.topic}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="clr"></div>
+	</div>
+</div>
